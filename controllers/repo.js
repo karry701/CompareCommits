@@ -2,6 +2,7 @@ const { Octokit } = require('@octokit/rest');
 
 // Initialize Octokit
 const octokit = new Octokit();
+console.log("CheckCommit");
 
 // API route to get code differences for a commit
 exports.gitCommitDiff = async function (req, res, next) {
